@@ -1,0 +1,55 @@
+{
+    "webpagetitle": "Material Made",
+    "appname": "mm",
+    "description": "This is tool which can be used in future to develop the mobile applications using latest angularjs materials design components. This is a drag and drop tool ",
+    "css": {
+        "layout": {
+            "foldername": "layout",
+            "media": ["desktop", "tablet.landscape"],
+            "description": "No description available"
+        }
+    },
+    "controller": {
+        "home": {
+            "foldername": "home",
+            "controllername": "home",
+            "pagename": "home",
+            "description": "No description available"
+        },
+        "left": {
+            "foldername": "left",
+            "controllername": "left",
+            "pagename": "left",
+            "description": "No description available"
+        },
+        "center": {
+            "foldername": "center",
+            "controllername": "center",
+            "pagename": "center",
+            "description": "No description available"
+        }
+    },
+    "directive": {
+        "ui-draggable": {
+            "foldername": "ui-draggable",
+            "directivename": "ui-draggable",
+            "description": "No description available",
+            "camelCaseDirectivename": "uiDraggable"
+        },
+        "ui-dropabble": {
+            "foldername": "ui-droppable",
+            "directivename": "ui-dropabble",
+            "description": "No description available",
+            "camelCaseDirectivename": "uiDropabble"
+        },
+        "ui-droppable": {
+            "foldername": "ui-droppable",
+            "directivename": "ui-droppable",
+            "description": "No description available",
+            "camelCaseDirectivename": "uiDroppable"
+        }
+    },
+    "filter": {},
+    "service": {},
+    "factory": {}
+}

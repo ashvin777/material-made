@@ -1,0 +1,43 @@
+<!--
+ Created By : root
+ Creation Date : Sun Dec 20 2015 13:45:58 GMT+0530 (IST)
+ Description : This is tool which can be used in future to develop the mobile applications using latest angularjs materials design components. This is a drag and drop tool
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Material Made</title>
+  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.material.min.css"/>
+  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.material.colors.min.css"/>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+  <link rel='stylesheet' href='/css/layout/layout.desktop.css' media='screen and (min-width: 1024px)' />
+  <link rel='stylesheet' href='/css/layout/layout.tablet.landscape.css' media='screen and (max-width: 1024px) and (orientation: landscape) ' />
+
+  <!--~!link!~-->
+</head>
+
+<body ng-app="mm" ng-cloak>
+  <div ui-view class="views"></div>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="bower_components/jqueryui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
+
+  <script src="src/app/app.js"></script>
+  <!--~!script-controllers!~-->
+		<script type='text/javascript' src='/src/app/center/center.controller.js'></script>
+		<script type='text/javascript' src='/src/app/left/left.controller.js'></script>
+
+  <!--~!script-directives!~-->
+		<script type='text/javascript' src='/src/directives/ui-droppable/ui-droppable.directive.js'></script>
+		<script type='text/javascript' src='/src/directives/ui-draggable/ui-draggable.directive.js'></script>
+  <!--~!script-services!~-->
+  <!--~!script-filters!~-->
+  <!--~!script-factories!~-->
+</body>
+
+</html>

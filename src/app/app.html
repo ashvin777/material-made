@@ -1,0 +1,25 @@
+<!--
+
+ Created By : root
+ Creation Date : Sun Dec 20 2015 13:45:58 GMT+0530 (IST)
+
+ -->
+<div class="view main-view" data-page="app">
+  <div class="pages navbar-fixed">
+    <div class="page">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="left"></div>
+          <div class="center">Material Made</div>
+          <div class="right"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="row inherit-height  no-gutter">
+          <div class="col-25 inherit-height relative left-view" ui-view="LeftView"></div>
+          <div class="col-75 inherit-height relative center-view" ui-view="CenterView"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

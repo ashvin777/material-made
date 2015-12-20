@@ -1,0 +1,23 @@
+{
+  "name": "MaterialMade",
+  "version": "0.0.0",
+  "authors": [
+    "ashvin <ashvin.suthar777@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.14.3",
+    "angular-mocks": "~1.4.7",
+    "angular-ui-router": "ui-router#~0.2.15",
+    "angular": "angularjs#~1.4.7",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
