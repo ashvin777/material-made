@@ -10,12 +10,6 @@
         }
     },
     "controller": {
-        "home": {
-            "foldername": "home",
-            "controllername": "home",
-            "pagename": "home",
-            "description": "No description available"
-        },
         "left": {
             "foldername": "left",
             "controllername": "left",
@@ -26,6 +20,12 @@
             "foldername": "center",
             "controllername": "center",
             "pagename": "center",
+            "description": "No description available"
+        },
+        "home": {
+            "foldername": "home",
+            "controllername": "home",
+            "pagename": "home",
             "description": "No description available"
         }
     },

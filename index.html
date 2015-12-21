@@ -10,9 +10,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <title>Material Made</title>
-  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.material.min.css"/>
-  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.material.colors.min.css"/>
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.material.min.css" />
+  <link rel="stylesheet" href="bower_components/framework7/dist/css/framework7.material.colors.min.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
   <link rel='stylesheet' href='/css/layout/layout.desktop.css' media='screen and (min-width: 1024px)' />
   <link rel='stylesheet' href='/css/layout/layout.tablet.landscape.css' media='screen and (max-width: 1024px) and (orientation: landscape) ' />
 
@@ -21,20 +21,68 @@
 
 <body ng-app="mm" ng-cloak>
   <div ui-view class="views"></div>
+
+  <div id="editor-container">
+
+    <div id="editor-contextmenu">
+      <div class="editor-contextmenu-option" data-event="navbar">
+        <div class="title">Navbar</div>
+        <div class="component">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="left">
+                <a href="#" class="link">
+                  <i class="icon icon-back"></i>
+                  <span>Back</span>
+                </a>
+              </div>
+              <div class="center">Center</div>
+              <div class="right">
+                <a href="#" class="link">
+                  <i class="icon icon-bars"></i>
+                  <span>Menu</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="page-content">
+          </div>
+        </div>
+      </div>
+      <div class="editor-contextmenu-option" data-event="toolbar">
+        <div class="title">Toolbar</div>
+        <div class="toolbar component">
+          <div class="toolbar-inner">
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+            <a href="#" class="link">Link 3</a>
+          </div>
+        </div>
+      </div>
+      <div class="editor-contextmenu-option" data-event="tabbar">Tabbar</div>
+    </div>
+  </div>
+
   <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
   <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="bower_components/jqueryui/jquery-ui.min.js"></script>
   <script type="text/javascript" src="bower_components/framework7/dist/js/framework7.min.js"></script>
-
+  <script type="text/javascript" src="src/lib.js"></script>
   <script src="src/app/app.js"></script>
   <!--~!script-controllers!~-->
-		<script type='text/javascript' src='/src/app/center/center.controller.js'></script>
-		<script type='text/javascript' src='/src/app/left/left.controller.js'></script>
+
+  <script type='text/javascript' src='/src/app/home/home.controller.js'></script>
+
+  <script type='text/javascript' src='/src/app/center/center.controller.js'></script>
+
+  <script type='text/javascript' src='/src/app/left/left.controller.js'></script>
 
   <!--~!script-directives!~-->
-		<script type='text/javascript' src='/src/directives/ui-droppable/ui-droppable.directive.js'></script>
-		<script type='text/javascript' src='/src/directives/ui-draggable/ui-draggable.directive.js'></script>
+
+  <script type='text/javascript' src='/src/directives/ui-droppable/ui-droppable.directive.js'></script>
+
+  <script type='text/javascript' src='/src/directives/ui-draggable/ui-draggable.directive.js'></script>
   <!--~!script-services!~-->
   <!--~!script-filters!~-->
   <!--~!script-factories!~-->

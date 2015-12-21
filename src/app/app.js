@@ -33,16 +33,25 @@ angular.module('mm', ['mm.services', 'mm.filters', 'mm.factories', 'mm.directive
             url: "/app",
             templateUrl: "src/app/app.html"
         })
+        // .state("app.home", {
+        //     url: "/home",
+        //     views: {
+        //         LeftView: {
+        //             templateUrl: "src/app/left/left.html",
+        //             controller: "left"
+        //         },
+        //         CenterView: {
+        //             templateUrl: "src/app/center/center.html",
+        //             controller: "center"
+        //         }
+        //     }
+        // })
         .state("app.home", {
             url: "/home",
             views: {
-                LeftView: {
-                    templateUrl: "src/app/left/left.html",
-                    controller: "left"
-                },
-                CenterView: {
-                    templateUrl: "src/app/center/center.html",
-                    controller: "center"
+                AppContent: {
+                    templateUrl: "src/app/home/home.html",
+                    controller: "home"
                 }
             }
         })
